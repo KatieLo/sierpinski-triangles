@@ -1,0 +1,67 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #D5DED9;
+}
+
+/*
+* Thanks to Daniel Perez Alvarez for this GitHu-style ribbon
+* Tutorial at http://unindented.org/articles/github-ribbon-using-css-transforms/
+*/
+.ribbon {
+  background-color: #7A6A53;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: -50px;
+  top: 30px;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-box-shadow: 0 0 10px #888;
+     -moz-box-shadow: 0 0 10px #888;
+          box-shadow: 0 0 10px #888;
+}
+.ribbon a {
+  border: 1px solid #948C75;
+  color: #D5DED9;
+  display: block;
+  font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444;
+}
+
+#control {
+	text-align: center;
+	font-family: sans-serif;
+	color: #D9CEB2;
+	background: #7A6A53;
+	border-radius: 2px;
+	width: 305px;
+	top: 50px;
+	padding: 30px;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+canvas {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+@media screen and (max-width: 300px) {
+    #control {
+    	width: 100%;
+    	 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  			-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  				 box-sizing: border-box;  
+    }
+}
