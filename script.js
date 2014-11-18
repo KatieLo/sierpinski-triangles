@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 function initTriangle(){
 	var $canvas = $("canvas");
-	var height = $(window).height() - $("#control").outerHeight(); // to allow for the control div
+	var height = $(window).height() - $("#control").outerHeight() - $("footer").outerHeight(); // to allow for the control div and footer
 	var width = $(window).width();
 	$canvas.attr("height",height);
 	$canvas.attr("width",width);
