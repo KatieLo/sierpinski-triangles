@@ -77,6 +77,11 @@ footer > a {
 footer > a:hover, footer > a:focus {
 	text-decoration: underline;
 }
+@media screen and (max-width: 650px) {
+	.ribbon {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 300px) {
     #control {
